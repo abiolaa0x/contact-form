@@ -1,117 +1,134 @@
-# Frontend Mentor - Contact form solution
+# C. - Interactive Contact Form
 
-This is a solution to the [Contact form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+A clean, accessible, and responsive contact form with client-side validation and user feedback. Built with **HTML**, **CSS**, and vanilla **JavaScript**, inspired by Frontend Mentor style challenges.
 
-## Table of contents
+---
+
+## Table of Contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
 ## Overview
 
-### The challenge
+This project is a fully responsive contact form designed to collect user enquiries in a clean and user-friendly way. It focuses on accessibility, proper form validation, and clear user feedback.
 
-Users should be able to:
+The form includes:
 
-- Complete the form and see a success toast message upon successful submission
-- Receive form validation messages if:
-  - A required field has been missed
-  - The email address is not formatted correctly
-- Complete the form only using their keyboard
-- Have inputs, error messages, and the success message announced on their screen reader
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+- Required personal details such as name and email
+- A query type selection using radio buttons
+- A message input area for detailed enquiries
+- A consent checkbox required before submission
+- A success alert that confirms when the form is submitted correctly
 
-### Screenshot
+Client-side validation ensures users are guided to fix errors before submission, improving overall user experience.
 
-![](./screenshot.jpg)
+---
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+## Features
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+- **Responsive layout** optimized for desktop, tablet, and mobile screens
+- **Client-side form validation** for required and invalid fields
+- **Accessible form elements** with proper labels and semantic HTML
+- **Radio and checkbox validation** to ensure correct user selections
+- **Success feedback UI** shown after successful submission
+- **Clean and minimal UI design** with readable typography
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+---
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+## Technologies Used
 
-### Links
+- **HTML5** (Semantic form structure)
+- **CSS3** (Flexbox, responsive styling)
+- **JavaScript** (Vanilla form validation and interactions)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+---
 
-## My process
+## Installation
 
-### Built with
+1. Clone the repository:
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+   ```bash
+   git clone https://github.com/yourusername/contact-form.git
+   ```
+2. Navigate to the project Folder:
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+   ```bash
+   cd contact-form
+   ```
 
-### What I learned
+3. Open index.html in your preferred browser.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+## Usuage
 
-To see how you can add code snippets, see below:
+Open the form in any modern browser.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+- Fill in your first name, last name, and email address
+
+- Select a query type (General Enquiry or Support Request)
+
+- Enter your message
+
+- Check the consent checkbox to allow contact
+
+- Click Submit
+
+If any required field is missing or invalid, an error message will be displayed.
+When all inputs are valid, a success alert confirms that the message has been sent.
+
+## Folder Structure
+
+```text
+contact-form/
+│
+├── index.html           
+├── style.css            
+├── script.js       
+└── README.md
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+
+## Contribution
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch:
+
+```Bash
+git checkout -b feature/YourFeatureName
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
+3. Make your changes.
+4. Commit your changes:
+
+```Bash
+git commit -m "Add your message here"
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+5. Push your branch:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```Bash
+git push origin feature/YourFeatureName
+```
 
-### Continued development
+6. Open a Pull Request.
+Please follow semantic commits and write clear, descriptive commit messages.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+## License
+This project is open source and available under the MIT License.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+## Contact
+Created by abiola0x – feel free to reach out!
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Email: [www.amujonathan@gmail.com](mailto:www.amujonathan@gmail.com)
+- GitHub: [abiolaa0x](https://github.com/abiolaa0x)
+- Twitter: [abiola0x](https://www.x.com/abiola0x)
