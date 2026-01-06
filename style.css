@@ -16,37 +16,32 @@ body {
 }
 
 body {
-  background-color: hsl(148, 38%, 91%);
-  color: hsl(187, 24%, 22%);
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  background-color: hsl(148, 38%, 91%);
+  color: hsl(187, 24%, 22%);
 }
 
 .page {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 /* ---------- SUCCESS ALERT ---------- */
 .success_alert {
-  position: relative;
-  top: 10px;
+  display: none;
   height: 100px;
-  padding: 12px;
-  background: hsl(187, 24%, 22%);
+  margin-bottom: 10px;
+  padding: 12px 25px;
+  background-color: hsl(187, 24%, 22%);
   color: #fff;
-  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 0 4px 4px hsl(186, 15%, 59%);
   flex-direction: column;
   justify-content: center;
-  border-radius: 12px;
-  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
-
-  display: none;
 }
 
 .success_alert div {
@@ -55,28 +50,31 @@ body {
 }
 
 .success_alert img {
-  height: auto;
   margin-right: 10px;
 }
 
 /* ---------- FORM ---------- */
 form {
   width: 100%;
-  max-width: 720px;
-  background: #fff;
+  max-width: 700px;
   padding: 40px 30px;
+  background-color: #fff;
   border-radius: 14px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
+  margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 30px;
 }
 
 span {
   color: hsl(169, 82%, 27%);
+}
+
+.container {
+  margin-bottom: 24px;
 }
 
 .error__message {
@@ -84,14 +82,10 @@ span {
   color: hsl(0, 66%, 54%);
 }
 
-.container {
-  margin-bottom: 24px;
-}
-
-/* ---------- INPUTS (SHARED) ---------- */
+/* ---------- INPUTS ---------- */
 input,
 textarea {
-  font-family: "Karla", sans-serif;
+  font-family: inherit;
   font-size: 16px;
 }
 
@@ -116,16 +110,19 @@ textarea {
   resize: none;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover,
-textarea:hover {
-  border-color: hsl(169, 82%, 27%);
-}
-
+input:hover,
+textarea:hover,
 input:focus,
 textarea:focus {
   outline: none;
   border-color: hsl(169, 82%, 27%);
+}
+
+/* ---------- LABELS ---------- */
+label {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* ---------- NAME FIELDS ---------- */
@@ -140,21 +137,14 @@ textarea:focus {
   flex-direction: column;
 }
 
-label {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
 /* ---------- EMAIL ---------- */
 .email input {
   margin-top: 6px;
 }
 
-/* ---------- QUERY TYPE (RADIOS) ---------- */
+/* ---------- QUERY TYPE ---------- */
 #q_label {
   display: block;
-  /* font-weight: 600; */
 }
 
 .query_type {
@@ -175,9 +165,9 @@ label {
 }
 
 .query_type div label {
-  font-weight: 700;
   flex: 1;
   margin: 0;
+  font-weight: 700;
 }
 
 .query_type div:has(input[type="radio"]:checked) {
@@ -203,8 +193,8 @@ input[type="checkbox"] {
 }
 
 .consent label {
-  font-weight: 400;
   margin: 0;
+  font-weight: 400;
 }
 
 .consent input {
@@ -231,6 +221,10 @@ button:hover {
 
 /* ---------- MOBILE ---------- */
 @media (max-width: 600px) {
+  body {
+    margin: 40px 16px;
+  }
+
   .names {
     grid-template-columns: 1fr;
   }
