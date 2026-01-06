@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form (built by 0x)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- Success Alert -->
+      <div class="success_alert">
+        <div>
+          <img src="assets/images/icon-success-check.svg" alt="Success" />
+          <h3>Message Sent!</h3>
+        </div>
+        <p>thanks for completing the form. we'll be in touch soon!</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form method="post" novalidate>
+        <h1>Contact Us</h1>
+
+        <div class="container">
+          <div class="names">
+            <div>
+              <label for="first_name">First Name <span>*</span></label>
+              <input type="text" id="first_name" required />
+              <div class="error__message">This field is required</div>
+            </div>
+            <div>
+              <label for="last_name">Last Name <span>*</span></label>
+              <input type="text" id="last_name" required />
+              <div class="error__message">This field is required</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="email">
+            <label for="email">Email Address <span>*</span></label>
+            <input type="email" id="email" required />
+            <div class="error__message">Please enter a valid email address</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <label for="query_type" id="q_label">Query Type <span>*</span></label>
+          <div class="query_type">
+            <div class="gen">
+              <input
+                type="radio"
+                name="query_type"
+                id="general_enquiry"
+                required
+              />
+              <label for="general_enquiry">General Enquiry</label>
+            </div>
+
+            <div class="sup">
+              <input
+                type="radio"
+                name="query_type"
+                id="support_request"
+                required
+              />
+              <label for="support_request">Support Request</label>
+            </div>
+          </div>
+          <div class="error__message">Please select a query type</div>
+        </div>
+
+        <div class="container">
+          <div class="message_box">
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" rows="3" required></textarea>
+            <div class="error__message">This field is required</div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="consent">
+            <input name="consent" id="consent" type="checkbox" required />
+            <label for="consent">
+              I consent to being contacted by the team <span>*</span>
+            </label>
+          </div>
+          <div class="error__message">
+            To submit this form, please consent to be contacted
+          </div>
+        </div>
+
+        <div class="container">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
