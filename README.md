@@ -1,4 +1,4 @@
-# C. - Interactive Contact Form
+# Interactive Contact Form
 
 A clean, accessible, and responsive contact form with client-side validation and user feedback. Built with **HTML**, **CSS**, and vanilla **JavaScript**, inspired by Frontend Mentor style challenges.
 
