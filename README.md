@@ -48,7 +48,7 @@ Client-side validation ensures users are guided to fix errors before submission,
 ## Technologies Used
 
 - **HTML5** (Semantic form structure)
-- **CSS3** (Flexbox, responsive styling)
+- **CSS3** (Flexbox, Grid, responsive styling)
 - **JavaScript** (Vanilla form validation and interactions)
 
 ---
